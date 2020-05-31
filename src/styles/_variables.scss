@@ -1,0 +1,29 @@
+$link-color                   : #3f51b5;
+$link-hover-color             : currentColor;
+$link-hover-decoration        : none;
+$label-margin-bottom          : 0;
+$enable-responsive-font-sizes :true;
+
+$default_background:white;
+// $default_background:#F1F8F8;
+
+//Material design breakpoints
+$grid-breakpoints: (xs: 0, // handset portrait (small, medium, large) | handset landscape (small)
+    sm           : 37.5em, // handset landscape (medium, large) | tablet portrait(small, large)
+    md           : 60em, //  tablet landscape (small, large)
+    lg           : 80em, // laptops and desktops
+    xl           : 100em // large desktops
+);
+
+$container-max-widths: (
+    sm: 100%,
+    md: 100%,
+    lg: 100%,
+    xl: 100%);
+
+// Font-Size
+$base-font-size: 1rem;
+
+// Line-Height
+$base-line-height  : 1.5;
+$header-line-height: 1.25;
