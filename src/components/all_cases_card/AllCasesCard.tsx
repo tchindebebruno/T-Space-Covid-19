@@ -35,7 +35,7 @@ const AllCasesCard: React.FC<BaseProps> = props => {
     <React.Fragment>
       <Title>Nombres de contaminées</Title>
       <Typography component="p" variant="h4">
-        {formatMoney(GlobalInfo.TotalConfirmed,2,","," ")}
+        {formatMoney(GlobalInfo.TotalConfirmed,1,","," ")}
       </Typography>
       <Typography color="textSecondary" className={classes.depositContext}>
         Dans le monde

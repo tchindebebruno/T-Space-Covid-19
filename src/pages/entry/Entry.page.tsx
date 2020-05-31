@@ -16,7 +16,11 @@ export const EntryPage: React.FC<EntryPageProps> = props => {
     <>
       <Switch>
         <Route
-          path={'/me'}
+          path={'/'}
+          render={renderProps => <ContainerPageRoute {...renderProps} />}
+        />
+        <Route
+          path={'/dashboard'}
           render={renderProps => <ContainerPageRoute {...renderProps} />}
         />
         <Route

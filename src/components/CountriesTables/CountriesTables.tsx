@@ -38,7 +38,7 @@ export interface BaseProps {
 const CountriesTables: React.FC<BaseProps> = props => {
   const classes = useStyles();
   const { AllCountries=[], all=false} = props;
-  const Countries  = AllCountries.filter((k,i)=>i<7);
+  const Countries  = AllCountries.filter((k,i)=>i<9);
   /**
    * {
       "Country": "ALA Aland Islands",

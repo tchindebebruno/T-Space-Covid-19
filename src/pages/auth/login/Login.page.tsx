@@ -51,7 +51,7 @@ const LoginComponent: React.FC<LoginProps> = props => {
   }, duration)
 
   setTimeout(() =>{
-    props.history.push('/me')
+    props.history.push('/dashboard')
   }, duration * 2)
 
 

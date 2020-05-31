@@ -22,7 +22,7 @@ interface Route {
 
 type Routes = (url: string, roles: string[]) => Route[]
 
-const getRoutesPerRoles: Routes = (baseRoute = '/me', roles: string[]) => {
+const getRoutesPerRoles: Routes = (baseRoute = '/dashboard', roles: string[]) => {
     const routes: Route[] = [
         {
             title_type: false,

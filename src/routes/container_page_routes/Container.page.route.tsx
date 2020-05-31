@@ -16,7 +16,7 @@ const ContainerPageRoute: React.FC<ContainerPageRouteProps> = (props) => {
       roles={[
         ROLE_ADMINISTRATOR,
       ]}
-      url='/me'
+      url='/dashboard'
     />
   );
 }
