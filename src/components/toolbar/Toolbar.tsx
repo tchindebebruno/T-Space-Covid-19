@@ -27,6 +27,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './../menu_actions/MenuAction';
 import {Chart, AllCasesCard, CountriesTables} from 'components';
 import Covid19Service from 'services/Covid19Service';
+import logo from '../../assets/imgs/logo.png';
 
 export interface BaseProps {
     readonly dumm?: boolean;
@@ -38,6 +39,7 @@ export interface BaseProps {
 function Copyright() {
     return (
         <Typography variant="body2" color="textSecondary" align="center">
+        <img style={{width:100}} src={logo} alt={"logo"} /><br/>
         {'Copyright © '}
         <Link color="inherit">
           T-Space Covid-2019
@@ -128,6 +130,9 @@ function Copyright() {
     fixedHeight: {
       height: 240,
     },
+    logo:{
+      width: 50
+    }
   }));
 
 const ToolBarMenuComponent: React.FC<BaseProps> = props => {
