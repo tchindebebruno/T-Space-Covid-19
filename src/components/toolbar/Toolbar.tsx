@@ -28,6 +28,7 @@ import { mainListItems, secondaryListItems } from './../menu_actions/MenuAction'
 import {Chart, AllCasesCard, CountriesTables} from 'components';
 import Covid19Service from 'services/Covid19Service';
 import logo from '../../assets/imgs/logo.png';
+import ColoredScrollbars from './ColoredScrollbars';
 
 export interface BaseProps {
     readonly dumm?: boolean;
@@ -92,7 +93,7 @@ function Copyright() {
       flexGrow: 1,
     },
     drawerPaper: {
-      position: 'fixed',
+      position: 'relative',
       whiteSpace: 'nowrap',
       width: drawerWidth,
       transition: theme.transitions.create('width', {
@@ -251,6 +252,7 @@ const ToolBarMenuComponent: React.FC<BaseProps> = props => {
         <Divider />
         <List>{secondaryListItems}</List>
       </Drawer>
+      <ColoredScrollbars thumbSize={300} style={{ height: "100vh" }}>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
@@ -279,6 +281,7 @@ const ToolBarMenuComponent: React.FC<BaseProps> = props => {
           </Box>
         </Container>
       </main>
+      </ColoredScrollbars>
     </div>
         </React.Fragment>
     );
